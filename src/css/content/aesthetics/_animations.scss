@@ -1,0 +1,23 @@
+@use "../code/variables" as *;
+@use "../code/mixins" as *;
+
+@keyframes headerAnimation {
+    0% {
+        background: $header-color;
+    }
+
+    33% {
+        background: #FAB049;
+        background: linear-gradient(147deg, rgba(250, 176, 73, 1) 67%, rgba(69, 111, 169, 1) 72%); 
+    }
+
+    66% {
+        background: #FAB049;
+        background: linear-gradient(147deg, rgba(250, 176, 73, 1) 79%, rgba(69, 111, 169, 1) 85%);
+    }
+
+    100% {
+        background: #FAB049;
+        background: linear-gradient(147deg, rgba(250, 176, 73, 1) 100%, rgba(69, 111, 169, 1) 100%);
+    }
+}
