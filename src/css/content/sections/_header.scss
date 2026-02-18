@@ -5,3 +5,15 @@ header {
     width: 100%;
     background: $header-color;
 }
+
+@media (prefers-color-scheme: light) {
+    header:has(nav a:hover) {
+        animation: light-headerAnimation 0.3s forwards;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    header:has(nav a:hover) {
+        animation: dark-headerAnimation 0.3s forwards;
+    }
+}

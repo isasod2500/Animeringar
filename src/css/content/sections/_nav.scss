@@ -1,6 +1,7 @@
 @use "../code/variables" as *;
 @use "../code/functions" as *;
 @use "../code/mixins" as *;
+@use "../aesthetics/animations" as *;
 
 
 #nav {
@@ -16,7 +17,6 @@
     a {
         font-size: 1.3rem;
         padding: 0 4px 0 4px;
-        
         @include link-styling;
         color: light-dark(#000000, #FFFFFF);
         word-break:keep-all;
