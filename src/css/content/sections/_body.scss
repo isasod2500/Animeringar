@@ -58,6 +58,35 @@ body {
             @include text-format-s;
         }
     }
+
+    #mainAnimation {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    } h2 {
+        pointer-events: none;
+        color: #121212;
+        animation: heading-animation 4s 2s alternate 2;
+    } h3 {
+        color: #121212;
+        animation: heading-animation 4s 10s forwards;
+    } h3:hover + #loadingBar {
+        animation: show-loadingBar 4s forwards;
+    }
+
+    #loadingBar {
+        padding: 15px;
+        width: 75%;
+        color: #121212;
+        transition: width 4s;
+    }
+
+    #loadingBar:hover {
+        width: 300px;
+    }
 }
 
 @media (min-width:768px) and (max-width: 1200px) {
