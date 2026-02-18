@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="/src/css/main.scss">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css-preprocessorer</title>
+</head>
+
+<body>
+    <header id="header">
+        <nav id="nav">
+            <ul>
+                <li><a href="index.html">Startsida</a></li>
+                <li><a href="SASS.html">SASS</a></li>
+                <li><a href="#" class="disabled">Ickesida</a></li>
+                <li><a href="#" class="disabled">EjHärSida</a></li>
+                <li><a href="#" class="disabled">Baksida</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="mainSASS">
+        <h1>Att arbeta med SASS</h1>
+        <article id="SASSinfo">
+            <h2>För- och nackdelar med SASS </h2>
+            <p>
+                Jag tyckte att det var svårt att komma igång med SASS. Speciellt när jag som nybörjare håller på att
+                lära mig att effektivt kunna arbeta med CSS. Det kändes svårt att glömma lite av mina vanliga CSS-vanor
+                och översätta dem till SASS/SCSS. <br>Vad är en mixin, när och hur ska den användas till exempel. När är
+                det
+                rimligt med if/else funktioner, hur gör jag med light-dark theme i media queries?
+                Många frågor dök upp och jag var påfrestad inför att behöva lösa dem, det kändes verkligen som jag
+                började om med webbutveckling.</p>
+
+            <p>Men jag vet inte om det är en nackdel med SASS, det jag har upplevt, eller om det bara är naturligt att
+                det känns svårt i början.</p>
+
+            <p>Efter att jag lekt runt med mixins, variabler och funktioner ser jag nyttan i
+                det. I skapandet av koden men även det konkreta som syns på skärmen, mängden kod är helt klart mindre.
+                Lyckas man strukturera upp det på ett bra sätt behövs bara en eller två mixins för en hel sektion. Blir
+                man riktigt duktig känns det som att allt kan styras av bara några funktioner.
+                <br>Jag stöter nog på fler fördelar och nackdelar ju mer jag jobbar med detta, men det känns som, och
+                jag
+                hoppas, att det största hindret var att översätta dem arbetssätt jag har hunnit utveckla till
+                funktioner, mixins och extends.
+            </p>
+            <p>
+                Att strukturera mina partials tyckte jag också var svårt. Jag skapade en mapp för ett par partials jag tyckte hängde ihop, så som partials för header, footer, body och sånt. Men det kändes nästa onödigt då jag inte behövde fylla dem med speciellt mycket.
+                Jag har även två partials för mixins respektive variabler, som inte är fyllda med jättemycket heller. För större projekt kanske det känns med intuitivt men i det här fallet var det rätt svårt att rättfärdiga olika filer, för min del.
+            </p>
+        </article>
+    </main>
+    <footer id="footer">
+        <ul id="footerNav">
+            <li><a href="#">Till toppen</a></li>
+        </ul>
+    </footer>
+    <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>

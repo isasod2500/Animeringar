@@ -1,0 +1,26 @@
+@use "../code/variables" as *;
+@use "../code/mixins" as *;
+@use "header" as *;
+
+#footer {
+    @extend header;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    padding: 2rem 0 2rem 0;
+    ul {
+        @include ul-format
+    }
+
+    a {
+         @include link-styling;
+        border-radius: 5px;
+        padding: 5px;
+        background: $header-color;
+        background-color: light-dark(lighten($button-color, 30%), darken($button-color, 10%));
+        font-size: 20px;
+       
+    }
+}

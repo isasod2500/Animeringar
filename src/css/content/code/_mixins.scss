@@ -1,0 +1,50 @@
+@use "variables" as *;
+@use "functions" as *;
+
+@mixin text-format-s {
+        font-size: 18px;
+        padding-left: 0.5rem;
+        max-width: 50ch;
+        letter-spacing: 1px;
+}
+
+@mixin text-format-m {
+     font-size: 20px;
+        padding-left: 2rem;
+        max-width: 65ch;
+        letter-spacing: 1px;
+        line-height: 1.5rem;
+}
+
+@mixin text-format-l {
+     font-size: 24px;
+        padding-left: 2rem;
+        max-width: 70ch;
+        letter-spacing: 1px;
+        line-height: 2rem;
+}
+
+@mixin ul-format {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+@mixin link-styling {
+    text-decoration: none;
+    color: light-dark(#000000, #FFFFFF);
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+@mixin light-dark-theme {
+    color: light-dark(#000000, #FFFFFF);
+    background-color: light-dark(#e3e3e3, #121212);
+}
+
+
+@mixin section-styling {
+    color: light-dark(#000000, #FFFFFF);
+    background-color: light-dark(#CACACA, #2c2c2c)
+}

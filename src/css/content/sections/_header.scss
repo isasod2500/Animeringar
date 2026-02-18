@@ -1,0 +1,7 @@
+@use "../code/variables" as *;
+@use "../code/mixins" as *;
+
+header {
+    width: 100%;
+    background: $header-color;
+}

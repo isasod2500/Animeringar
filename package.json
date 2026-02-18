@@ -1,0 +1,18 @@
+{
+  "name": "css-preprocessorer",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "sass": "^1.97.3",
+    "sharp": "^0.34.5",
+    "svgo": "^4.0.0",
+    "vite": "^7.3.1",
+    "vite-plugin-image-optimizer": "^2.0.3"
+  }
+}

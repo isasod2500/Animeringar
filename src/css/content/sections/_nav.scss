@@ -1,0 +1,35 @@
+@use "../code/variables" as *;
+@use "../code/functions" as *;
+@use "../code/mixins" as *;
+
+
+#nav {
+    ul {
+        display: grid;
+        grid-template-columns: 2fr 2fr 2fr 2fr 2fr;
+        justify-items: center;
+        text-align: center;
+        @include ul-format;
+        padding: 1rem 0 1rem 0;
+    }
+
+    a {
+        font-size: 1.3rem;
+        padding: 0 4px 0 4px;
+        
+        @include link-styling;
+        color: light-dark(#000000, #FFFFFF);
+        word-break:keep-all;
+        
+    }
+
+    a.disabled {
+        @if $link-disabled {
+            cursor: not-allowed;
+            text-decoration: none;
+        } @else {
+            cursor: pointer;
+            text-decoration: underline;
+        }
+    }
+}

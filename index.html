@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="/src/css/main.scss">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css-preprocessorer</title>
+  </head>
+  <body>
+    <header id="header">
+      <nav id="nav">
+        <ul>
+          <li><a href="index.html">Startsida</a></li>
+          <li><a href="SASS.html">SASS</a></li>
+          <li><a href="#" class="disabled">Ickesida</a></li>
+          <li><a href="#" class="disabled">EjHärSida</a></li>
+          <li><a href="#" class="disabled">Baksida</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main id="mainIndex">
+      <h1>
+        Två fina bilder optimiserade med hjälp av Vite Image Optimizer och Sharp
+      </h1>
+      
+      <section id="images">
+        <article id="imgText">
+        <p>
+          Två slumpmässiga bilder, en från ett av mina favoritalbum och en annan på en s.k "levada"
+        </p>
+        <p>
+          Den första bilden föreställer en bro från en park i Bath, England med <b>palladiansk arkitektur</b>. Jag har aldrig varit där eller har större intresse för arkitektur, men bron används som motiv för ett album som heter <i>Morningrise</i>, av Opeth. 
+        </p>
+      </article>
+        <picture>
+          <source srcset="/public/media/priorparkbridge.webp">
+          <img href="public/media/priorparkbridge.jpg" fetchpriority="high" id="imgBridge" alt="En gammal bro i Prior Park, England">
+        </picture>
+
+        <p>Denna bild är tagen på Madeira, Portugal på en vandringsstig som heter Levada dos Tornos. En levada är en sorts akvedukt som leder vatten från den västra, regnigare delen av Madeira till den östra, torrare regionen som motsägelsefullt nog är bättre för jordbruk och även sockerrörsproduktion. Ca 2200km av levador har grävts sedan 1500-talet och har ytterligare ett syfte idag som vattenkraft.
+        </p>
+        <picture>
+          <source srcset="/public/media/levada.webp">
+          <img href="public/media/levada.jpg" fetchpriority="high" id="imgLevada" alt="En levada uppe i bergen på Madeira.">
+        </picture>
+      </section>
+    </main>
+    <footer id="footer">
+      <ul id="footerNav">
+        <li><a href="#">Till toppen</a></li>
+      </ul>
+    </footer>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
