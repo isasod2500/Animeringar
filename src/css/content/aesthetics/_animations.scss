@@ -1,23 +1,114 @@
 @use "../code/variables" as *;
 @use "../code/mixins" as *;
 
-@keyframes headerAnimation {
+@keyframes light-headerAnimation {
     0% {
         background: $header-color;
     }
 
-    33% {
+    10% {
         background: #FAB049;
-        background: linear-gradient(147deg, rgba(250, 176, 73, 1) 67%, rgba(69, 111, 169, 1) 72%); 
+        background: linear-gradient(147deg, rgba(250, 176, 73, 1) 47%, rgba(69, 111, 169, 1) 52%); 
     }
 
-    66% {
+    20% {
         background: #FAB049;
-        background: linear-gradient(147deg, rgba(250, 176, 73, 1) 79%, rgba(69, 111, 169, 1) 85%);
+        background: linear-gradient(147deg, rgba(250, 176, 73, 1) 50%, rgba(69, 111, 169, 1) 57%); 
+    }
+
+    30% {
+        background: #FAB049;
+        background: linear-gradient(147deg, rgba(250, 176, 73, 1) 55%, rgba(69, 111, 169, 1) 62%); 
+    }
+
+    40% {
+        background: #FAB049;
+        background: linear-gradient(147deg, rgba(250, 176, 73, 1) 62%, rgba(69, 111, 169, 1) 70%); 
+    }
+
+    50% {
+        background: #FAB049;
+        background: linear-gradient(147deg, rgba(250, 176, 73, 1) 70%, rgba(69, 111, 169, 1) 77%); 
+    }
+
+    60% {
+        background: #FAB049;
+        background: linear-gradient(147deg, rgba(250, 176, 73, 1) 75%, rgba(69, 111, 169, 1) 82%); 
+    }
+
+    70% {
+        background: #FAB049;
+        background: linear-gradient(147deg, rgba(250, 176, 73, 1) 82%, rgba(69, 111, 169, 1) 87%); 
+    }
+
+    80% {
+        background: #FAB049;
+        background: linear-gradient(147deg, rgba(250, 176, 73, 1) 86%, rgba(69, 111, 169, 1) 92%); 
+    }
+
+    90% {
+        background: #FAB049;
+        background: linear-gradient(147deg, rgba(250, 176, 73, 1) 93%, rgba(69, 111, 169, 1) 97%); 
     }
 
     100% {
         background: #FAB049;
-        background: linear-gradient(147deg, rgba(250, 176, 73, 1) 100%, rgba(69, 111, 169, 1) 100%);
+        background: linear-gradient(147deg, rgba(250, 176, 73, 1) 100%, rgba(69, 111, 169, 1) 100%); 
+    }
+}
+
+@keyframes dark-headerAnimation {
+    0% {
+        background: $header-color;
+    }
+
+    10% {
+        background: #FAB049;
+        background: linear-gradient(147deg, rgba(250, 176, 73, 1) 47%, rgba(69, 111, 169, 1) 52%); 
+    }
+
+    20% {
+        background: #FAB049;
+        background: linear-gradient(147deg, rgba(250, 176, 73, 1) 46%, rgba(69, 111, 169, 1) 50%); 
+    }
+
+    30% {
+        background: #FAB049;
+        background: linear-gradient(147deg, rgba(250, 176, 73, 1) 43%, rgba(69, 111, 169, 1) 50%); 
+    }
+
+    40% {
+        background: #FAB049;
+        background: linear-gradient(147deg, rgba(250, 176, 73, 1) 36%, rgba(69, 111, 169, 1) 43%); 
+    }
+
+    50% {
+        background: #FAB049;
+        background: linear-gradient(147deg, rgba(250, 176, 73, 1) 30%, rgba(69, 111, 169, 1) 37%); 
+    }
+
+    60% {
+        background: #FAB049;
+        background: linear-gradient(147deg, rgba(250, 176, 73, 1) 24%, rgba(69, 111, 169, 1) 30%); 
+    }
+
+    70% {
+        background: #FAB049;
+        background: linear-gradient(147deg, rgba(250, 176, 73, 1) 18%, rgba(69, 111, 169, 1) 23%); 
+    }
+
+    80% {
+        background: #FAB049;
+        background: linear-gradient(147deg, rgba(250, 176, 73, 1) 12%, rgba(69, 111, 169, 1) 16%); 
+    }
+
+    90% {
+        background: #FAB049;
+        background: linear-gradient(147deg, rgba(250, 176, 73, 1) 6%, rgba(69, 111, 169, 1) 9%); 
+    }
+
+    100% {
+        background: #FAB049;
+        background: linear-gradient(147deg, rgba(250, 176, 73, 1) 0%, rgba(69, 111, 169, 1) 0%); 
     }
 }
