@@ -114,7 +114,7 @@
 }
 
 
-@keyframes heading-animation {
+@keyframes dark-heading-animation {
     from {
         color: rgba(255, 255, 255, 0)
     }
@@ -124,15 +124,22 @@
     }
 }
 
-@keyframes show-loadingBar {
-    
+@keyframes light-heading-animation {
     from {
-        color: rgba(255, 0, 0, 0);
-        border: rgba(255, 0, 0, 0) 2px solid;
+        color: rgba(0, 0, 0, 0)
+    }
+    
+    to {
+        color: rgba(0, 0, 0, 1);
+    }
+}
+
+@keyframes show-thinking {
+    from {
+        opacity: 0
     }
 
     to {
-        color: rgba(255, 0, 0, 1);
-        border: rgba(255, 0, 0, 1) 2px solid;
+        opacity: 1.0
     }
 }

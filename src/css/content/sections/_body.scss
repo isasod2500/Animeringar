@@ -44,15 +44,19 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
-        h1, h2 {
+
+        h1,
+        h2 {
             text-align: center;
         }
+
         article {
-           @include section-styling;
-           border-radius: 15px;
-           width: 75%;
-           padding: 0 10px 10px 10px;
+            @include section-styling;
+            border-radius: 15px;
+            width: 75%;
+            padding: 0 10px 10px 10px;
         }
+
         p {
             margin-left: 1rem;
             @include text-format-s;
@@ -66,28 +70,71 @@ body {
         justify-content: center;
         align-items: center;
         text-align: center;
-    } h2 {
-        pointer-events: none;
-        color: #121212;
-        animation: heading-animation 4s 2s alternate 2;
-    } h3 {
-        color: #121212;
-        animation: heading-animation 4s 10s forwards;
-    } h3:hover + #loadingBar {
-        animation: show-loadingBar 4s forwards;
+        line-height: 0;
+    }    
+
+    .animationImg {
+        opacity: 0;
+        position: absolute;
+        animation: show-thinking 3s 6s alternate 2;
+        left: 22%;
     }
 
-    #loadingBar {
-        padding: 15px;
-        width: 75%;
-        color: #121212;
-        transition: width 4s;
-    }
+    @media (prefers-color-scheme: dark) {
+        #headerAnimations{
+        .header2-1 {
+            pointer-events: none;
+            color: #121212;
+            animation: dark-heading-animation 2s 2s alternate 2;
+        }
 
-    #loadingBar:hover {
-        width: 300px;
+        .header2-2 {
+            color: #121212;
+            animation: dark-heading-animation 3s 6s alternate 2;
+        }
+
+        .header2-3 {
+            color: #121212;
+            animation: dark-heading-animation 2s 12s forwards;
+        }
+    }
+    }
+    @media (prefers-color-scheme: light) {
+        #headerAnimations {
+        .header2-1 {
+            pointer-events: none;
+            color: #e3e3e3;
+            animation: light-heading-animation 2s 2s alternate 2;
+        }
+
+        .header2-2{
+            pointer-events: none;
+            color: #e3e3e3;
+            animation: light-heading-animation 3s 6s alternate 2;
+        }
+
+        .header2-3 {
+            pointer-events: none;
+            color: #e3e3e3;
+            animation: light-heading-animation 2s 12s forwards;
+        }
     }
 }
+
+
+}
+
+#loadingBar {
+    padding: 15px;
+    width: 75%;
+    color: #121212;
+    transition: width 4s;
+}
+
+#loadingBar:hover {
+    width: 300px;
+}
+
 
 @media (min-width:768px) and (max-width: 1200px) {
     #mainIndex {
@@ -123,15 +170,19 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
-        h1, h2 {
+
+        h1,
+        h2 {
             text-align: center;
         }
+
         article {
-           @include section-styling;
-           border-radius: 15px;
-           width: 75%;
-           padding: 0 10px 10px 10px;
+            @include section-styling;
+            border-radius: 15px;
+            width: 75%;
+            padding: 0 10px 10px 10px;
         }
+
         p {
             @include text-format-m;
         }
@@ -172,15 +223,19 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
-        h1, h2 {
+
+        h1,
+        h2 {
             text-align: center;
         }
+
         article {
-           @include section-styling;
-           border-radius: 15px;
-           width: 75%;
-           padding: 0 10px 10px 10px;
+            @include section-styling;
+            border-radius: 15px;
+            width: 75%;
+            padding: 0 10px 10px 10px;
         }
+
         p {
             @include text-format-l;
         }
