@@ -13,6 +13,7 @@ export default defineConfig({
             input: {
                 main: resolve(__dirname, "index.html"),
                 sass: resolve(__dirname, "SASS.html"),
+                animeringar: resolve(__dirname, "animeringar.html"),
             }
         }
     },
