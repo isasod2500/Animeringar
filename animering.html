@@ -1,23 +1,47 @@
 <!doctype html>
 <html lang="sv">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <link rel="stylesheet" href="/src/css/main.scss">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Animeringar</title>
-  </head>
-  <body>
-    <header id="header">
-      <nav id="nav">
-        <ul>
-          <li><a href="index.html">Startsida</a></li>
-          <li><a href="SASS.html">SASS</a></li>
-          <li><a href="animering.html">Animeringar</a></li>
-          <li><a href="#" class="disabled">EjHärSida</a></li>
-          <li><a href="#" class="disabled">Baksida</a></li>
-        </ul>
-      </nav>
-    </header>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <link rel="stylesheet" href="/src/css/main.scss">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Animeringar</title>
+</head>
+
+<body>
+  <header id="header">
+    <nav id="nav">
+      <ul>
+        <li><a href="index.html">Startsida</a></li>
+        <li><a href="SASS.html">SASS</a></li>
+        <li><a href="animering.html">Animeringar</a></li>
+        <li><a href="#" class="disabled">EjHärSida</a></li>
+        <li><a href="#" class="disabled">Baksida</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="mainAnimation">
+    <h1>Animeringar</h1>
+    <div id="headerAnimations">
+      <h2 class="header2-1">Oj... här var det visst tomt.</h2>
+      <h2 class="header2-2">Ge mig en sekund... hmm...</h2>
+      <img src="public/media/thinking.webp" class="animationImg">
+      <h2 class="header2-3">Såja, nu ska det fungera. "Hovra" nedan!</h2>
+    </div>
+    <div id="skateboardHeaders">
+      <h2 class="kickflip">Kickflip!</h2>
+      <h2 class="popshuvit">Pop-shuvit!</h2>
+      <h2 class="somersault">Framåtvolt!</h2>
+      <img src="public/media/skateCat.webp" class="skateCat">
+      <img src="public/media/skateboard.webp" class="skateboardImg">
+    </div>
+  </main>
+  <footer id="footer">
+      <ul id="footerNav">
+        <li><a href="#">Till toppen</a></li>
+      </ul>
+    </footer>
+    <script type="module" src="/src/main.js"></script>
+</body>

@@ -36,6 +36,7 @@
     &:hover {
         text-decoration: underline;
     }
+    word-break:break-all;
 }
 
 @mixin light-dark-theme {
