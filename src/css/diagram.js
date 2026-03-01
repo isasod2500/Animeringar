@@ -65,6 +65,9 @@ new Chart(canvas,
             ]
         },
         options: {
+            reponsive: true,
+            resizeDelay: 1,
+            maintainAspectRatio: false,
             scales: {
                 x: {
                      reverse: true,
